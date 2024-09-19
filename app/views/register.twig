@@ -1,0 +1,14 @@
+{% extends 'partials/layout.twig' %}
+
+{% block title %}Registrarse{% endblock %}
+
+{% block content %}
+    <form action="/register" method="POST">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Contraseña">
+        <button type="submit">Registrarse</button>
+        <a href='/'>
+            <button type='button'>Iniciar Sesión</button>
+        </a>
+    </form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'partials/layout.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Contraseña">
+        <button type="submit">Iniciar Sesión</button>
+        <a href='/register'>
+            <button type='button'>Registrarse</button>
+        </a>
+        {% if error %}
+            <div style="color: red; margin-bottom: 10px;">
+                {{ error }}
+            </div>
+        {% endif %}
+    </form>
+{% endblock %}

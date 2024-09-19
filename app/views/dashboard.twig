@@ -1,0 +1,12 @@
+{% extends 'partials/layout.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h1>{{ message }}</h1>
+    <p>Aquí puedes gestionar tus configuraciones.</p>
+    <button>
+        <a href="/logout">Cerrar sesión</a>
+    </button>
+    <button id="miBoton">Hacer clic aquí</button>
+{% endblock %}
